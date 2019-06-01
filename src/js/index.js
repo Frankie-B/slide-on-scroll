@@ -14,3 +14,13 @@ function debounce(func, wait = 20, immediate = true) {
         if (callNow) func.apply(context, args);
       };
     }
+
+    // Select all the images that will be listened on 
+    const sliderImages = document.querySelectorAll('.slide-in');
+
+    // The below function will run every time the user scrolls on the page
+    function checkSlide(e) {
+      console.log(e);
+    }
+
+    window.addEventListener('scroll', checkSlide);
